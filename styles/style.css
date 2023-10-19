@@ -312,7 +312,9 @@ ol {
 .search-form__checkbox-list {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 13px;
+    margin-bottom: 7px;
+    margin-left: 6px;
 }
 
 .search-form__label:focus-visible {
@@ -364,6 +366,21 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox {
 .more-button:hover,
 .search-form__submit-button:hover {
     text-decoration: underline;
+}
+
+.search-form__submit-button,
+.more-button {
+    outline-offset: -3px;
+    box-shadow: 0 0 0 1px var(--white);
+    border: 1px solid transparent;
+}
+
+.search-form__submit-button:focus,
+.search-form__submit-button:focus-visible,
+.more-button:focus,
+.more-button:focus-visible {
+    outline: 1px double var(--white) !important;
+    border: 1px solid var(--white);
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox {
